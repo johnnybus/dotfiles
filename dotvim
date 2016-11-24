@@ -55,7 +55,16 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ansible_options = {'documentation_mapping': '<C-K>'}
 
 set listchars=space:·
+ 
+" Guide lines character
 let g:indentLine_char = '┆'
+" Disable guide lines (only on toggle)
+let g:indentLine_enabled = 0
+" Guide lines toggle
+noremap <F4> :IndentLinesToggle<CR>
+" Guide lines color
+let g:indentLine_color_term = 239
+let g:indentLine_color_gui = '#A4E57E'"
 
 " Remove gvim toolbar
 set guioptions-=T
@@ -68,5 +77,3 @@ set guioptions-=L
 set foldmethod=indent
 set foldlevel=99
 
-" Enable folding with the spacebar
-nnoremap <space> za
