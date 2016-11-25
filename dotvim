@@ -34,7 +34,7 @@ set cursorline
 map <C-n> :NERDTreeToggle<CR>
 
 " Toogle invible chars as dots
-noremap <F3> :set list!<CR>
+map <F3> :set list!<CR>
 
 " Move between split panes
 nnoremap <C-J> <C-W><C-J>
@@ -48,11 +48,11 @@ let g:airline_theme = 'luna'
 " YouCompleteMe
 let g:ycm_python_binary_path = '/usr/bin/python'
 let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+map <C-g> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ansible_options = {'documentation_mapping': '<C-K>'}
+let g:ansible_options = {'documentation_mapping': '<C-m>'}
 
 set listchars=space:·
  
@@ -61,10 +61,10 @@ let g:indentLine_char = '┆'
 " Disable guide lines (only on toggle)
 let g:indentLine_enabled = 0
 " Guide lines toggle
-noremap <F4> :IndentLinesToggle<CR>
+map <F4> :IndentLinesToggle<CR>
 " Guide lines color
 let g:indentLine_color_term = 239
-let g:indentLine_color_gui = '#A4E57E'"
+let g:indentLine_color_gui = '#A4E57E'
 
 " Remove gvim toolbar
 set guioptions-=T
