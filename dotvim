@@ -20,13 +20,14 @@ call vundle#begin()
 call vundle#end()
 
 
+set t_Co=256
 filetype plugin indent on
 syntax on
 set expandtab
 set tabstop=2
 set shiftwidth=2
 colorscheme molokai
-set guifont=Hack\ 11
+set guifont=Hack\ 10
 set nu
 set cursorline
 
@@ -72,6 +73,8 @@ set guioptions-=T
 set guioptions-=r
 " Remove gvim left scroll bar
 set guioptions-=L
+" Remove gvim menu bar
+set guioptions-=m  "remove menu bar"
 
 " Enable folding
 set foldmethod=indent
