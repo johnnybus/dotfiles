@@ -24,8 +24,8 @@ set t_Co=256
 filetype plugin indent on
 syntax on
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 colorscheme molokai
 set guifont=Hack\ 10
 set nu
@@ -80,3 +80,5 @@ set guioptions-=m  "remove menu bar"
 set foldmethod=indent
 set foldlevel=99
 
+" No Wrap
+set nowrap
